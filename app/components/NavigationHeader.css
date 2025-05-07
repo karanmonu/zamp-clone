@@ -16,7 +16,6 @@
   vertical-align: middle;
 }
 
-/* Desktop nav links and button */
 .right-nav-container {
   display: flex;
   align-items: center;
@@ -59,7 +58,6 @@
   background-color: #404040;
 }
 
-/* Hamburger icon */
 .hamburger {
   display: none;
   font-size: 2rem;
