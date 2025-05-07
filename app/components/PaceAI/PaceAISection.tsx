@@ -8,7 +8,6 @@ export default function PaceAISection() {
     <section className={styles.paceAISection}>
       <div className={styles.container}>
         <div className={styles.headingWrapper}>
-          <span className={styles.newBadge}>NEW</span>
           <PaceAIHeading />
         </div>
         <FeatureTabs />

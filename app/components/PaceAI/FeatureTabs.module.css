@@ -1,20 +1,23 @@
 .tabContainer {
   width: 100%;
   padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .tabsCard {
   display: flex;
-  flex-direction: row; /* side by side on desktop */
+  flex-direction: row;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .tabNav {
   display: flex;
-  flex-direction: column; /* vertical tabs */
+  flex-direction: column;
   width: 250px;
   border-right: 1px solid #e0e0e0;
 }
@@ -24,6 +27,8 @@
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   border-bottom: 1px solid #e0e0e0;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .tabItem:hover {
@@ -40,14 +45,11 @@
   font-weight: 600;
 }
 
-.tabDescriptionWrapper {
-  margin-top: 0.5rem;
-}
-
 .tabDescription {
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
+  margin-top: 0.5rem;
 }
 
 .tabContent {
@@ -58,14 +60,15 @@
 /* Responsive behavior */
 @media (max-width: 768px) {
   .tabsCard {
-    flex-direction: column; /* stack vertically on small screens */
+    flex-direction: column;
   }
 
   .tabNav {
-    flex-direction: row; /* horizontal tabs on top */
+    flex-direction: row;
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #e0e0e0;
+    overflow-x: auto;
   }
 
   .tabItem {
@@ -73,24 +76,26 @@
     border-bottom: none;
     border-right: 1px solid #e0e0e0;
     text-align: center;
+    min-width: 120px;
   }
 
   .tabItem:last-child {
     border-right: none;
   }
 
-  .tabContent {
-    width: 100%;
-    padding: 1rem;
+  .tabTitle,
+  .tabDescription {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
-  .tabTitle {
-    font-size: 0.9rem;
+  .tabTitle,
+  .tabDescription {
+    font-size: 0.85rem;
   }
 
-  .tabDescription {
-    font-size: 0.9rem;
+  .tabItem {
+    padding: 0.75rem;
   }
 }
