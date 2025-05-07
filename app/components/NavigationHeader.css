@@ -1,6 +1,5 @@
 .navigation-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
   position: relative;
@@ -16,16 +15,34 @@
   vertical-align: middle;
 }
 
-.right-nav-container {
+/* NEW WRAPPER for navigation + hamburger */
+.nav-wrapper {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  flex: 1;
 }
 
-.nav-links {
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.left-nav-links,
+.right-nav-links {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+}
+
+.left-nav-links {
+  margin-right: auto;
+}
+
+.right-nav-links {
+  gap: 1.5rem;
 }
 
 .nav-link {
@@ -65,6 +82,7 @@
   border: none;
   cursor: pointer;
   z-index: 40;
+  margin-left: auto;
 }
 
 /* Backdrop overlay */
@@ -101,7 +119,7 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .right-nav-container {
+  .desktop-nav {
     display: none;
   }
 
