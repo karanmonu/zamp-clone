@@ -1,0 +1,86 @@
+.heroSection {
+  display: flex;
+  gap: 20px;
+}
+
+.contentColumn {
+  width: 50%;
+  margin-left: 0;
+  padding-left: 4rem;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.heading {
+  font-size: 6rem;
+  font-weight: 300;
+  color: black;
+  line-height: 94px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 96px;
+  max-width: 487px;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #78716c;
+}
+
+.ctaButton {
+  align-self: flex-start;
+  padding: 48px 64px;
+  margin-top: 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background-color: #171717;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: #404040;
+}
+
+.imageColumn {
+  margin-left: 20px;
+  width: 50%;
+}
+
+.image {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: 1.93;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+  }
+
+  .contentColumn,
+  .imageColumn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .heading {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .textContainer {
+    margin-top: 40px;
+  }
+}

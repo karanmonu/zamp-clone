@@ -1,0 +1,58 @@
+.trusted-logos {
+  background-color: #fdfcff;
+  padding: 40px 0; /* background section has no side padding */
+  overflow-x: hidden;
+  position: relative;
+}
+
+.trusted-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0 4rem; /* <-- key alignment here */
+}
+
+.trusted-text {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #171717;
+  white-space: nowrap;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.logos img {
+  height: 50px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.logos img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .trusted-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1.25rem; /* match header/hero mobile */
+  }
+
+  .logos {
+    justify-content: flex-start;
+    gap: 40px;
+    overflow-x: auto;
+  }
+}
