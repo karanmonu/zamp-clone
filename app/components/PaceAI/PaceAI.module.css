@@ -1,5 +1,5 @@
 .paceAISection {
-  background-image: url("/assets/bg-grid.png"); /* Replace with your actual image path */
+  background-image: url("/assets/bg-grid.png");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -48,4 +48,42 @@
 
 .bold {
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .paceAISection {
+    padding: 60px 15px;
+  }
+
+  .heading {
+    font-size: 28px;
+    max-width: 100%;
+  }
+
+  .newBadge {
+    font-size: 10px;
+    top: -20px;
+    left: -40px;
+  }
+
+  .container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .paceAISection {
+    padding: 40px 10px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .newBadge {
+    font-size: 9px;
+    padding: 3px 8px;
+    top: -18px;
+    left: -30px;
+  }
 }
