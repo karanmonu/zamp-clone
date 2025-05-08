@@ -15,7 +15,6 @@
   vertical-align: middle;
 }
 
-/* NEW WRAPPER for navigation + hamburger */
 .nav-wrapper {
   display: flex;
   align-items: center;
@@ -85,7 +84,6 @@
   margin-left: auto;
 }
 
-/* Backdrop overlay */
 .backdrop {
   position: fixed;
   top: 0;
@@ -96,7 +94,6 @@
   z-index: 20;
 }
 
-/* Mobile menu */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -117,7 +114,6 @@
   right: 0;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .desktop-nav {
     display: none;

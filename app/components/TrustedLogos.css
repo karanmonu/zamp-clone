@@ -29,12 +29,12 @@
   gap: 64px;
   align-items: center;
   overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .logos::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
 .logos img {
@@ -51,7 +51,6 @@
   filter: grayscale(0%);
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
   .trusted-container {
     flex-direction: column;
